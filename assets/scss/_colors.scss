@@ -1,7 +1,8 @@
 // Default Colors for site
 $pine-green: #018472;
 $bright-grey: #eeeeee;
-$white: #ffffff;
+$dark-grey: #444444;
+$white: #f0f0f0;
 $davys-grey : #494f5c;
 $granite-grey: #666666;
 $sonic-silver: #777777;
@@ -13,6 +14,7 @@ $taupe-grey: #878787;
 $chinese-silver: #cccccc;
 $anti-flash-white: #f1f1f1;
 $lapis-lazuli: #21759b;
+$black: #000000;
 
 // Default Colors and Opacity for Admonition
 $blueberry: #448aff;
@@ -26,11 +28,17 @@ $folly: #f50057;
 $goldenrod: #ccbb00;
 $admonition-background-opacity : 0.1;
 
+$charcoal-blue: #264653;
+$verdigris: #2a9d8f;
+$jasmine: #e9c46a;
+$sandy-brown: #f4a261;
+$burnt-peach: #e76f51;
+
 // Default dimmed value
 $dimmed-opacity: 0.8 !default;
 
 // Background color
-$html-background: $davys-grey !default;
+$html-background: $white !default;
 
 // Site Navigation color
 $site-nav-children-border-right:$css-grey !default;
@@ -62,9 +70,9 @@ $footnote-ref-background: $japanese-indigo !default;
 $scrolltotop-ring: $chinese-silver !default;
 
 // Page Scrollbar
-$pagescrollbar-background: $japanese-indigo !default;
-$pagescrollbar-thumb: $taupe-grey !default;
-$pagescrollbar-thumb-hover: $bright-grey !default;
+$pagescrollbar-background: $charcoal-blue !default;
+$pagescrollbar-thumb: $sandy-brown !default;
+$pagescrollbar-thumb-hover: $burnt-peach !default;
 
 // Table of Contents
 $tableofcontents-background: transparent;
@@ -75,16 +83,16 @@ $tableofcontents-scrollbar-thumb: $japanese-indigo !default;
 $tableofcontents-scrollbar-thumb-hover: lighten($japanese-indigo, 10%) !default;
 
 // Text color
-$text: $bright-grey !default;
+$text: $dark-grey !default;
 
 // Text selection color
-$text-select: $css-grey !default;
+$text-select: $chinese-silver !default;
 
 // Marked text color
 $marked-text:$bright-grey !default;
 
 // Link text color on hover
-$a-hover: $white !default;
+$a-hover: $black !default;
 
 // 404 Page
 $btn-404-a-border: $bright-grey !default;
@@ -109,10 +117,10 @@ $highlight-copy-btn-hover: $sonic-silver !default;
 $highlight-copy-btn-background: $granite-grey !default;
 
 // Site Header color
-$site-header-background:$arsenic !default;
+$site-header-background:$jasmine !default;
 
 // Mobile menu color
-$mobile-menu-background: $arsenic !default;
+$mobile-menu-background: $jasmine !default;
 
 // Accessibility - Screen reader
 $screen-reader-text: $lapis-lazuli !default;
