@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     utils.url = "github:numtide/flake-utils";
+    hugo-hermit-v2 = {
+      url = "github:1bl4z3r/hermit-V2?rev=cff7a3f7ef3bc35a05987e10d65a37ce22e3c376";
+      flake = false;
+    };
   };
 
   outputs =
@@ -11,6 +15,7 @@
       self,
       nixpkgs,
       utils,
+      hugo-hermit-v2,
       ...
     }:
     utils.lib.eachDefaultSystem (
@@ -22,6 +27,11 @@
         packages.default = pkgs.stdenv.mkDerivation {
           name = "hugo-test.com";
           src = self;
+
+          configurePhase = ''
+            mkdir -p "themes/hermit-V2l"
+            cp -r ${hugo-hermit-v2}/* "themes/hermit-V2l"
+          '';
 
           buildPhase = ''
             ${pkgs.hugo}/bin/hugo --minify
@@ -50,6 +60,10 @@
             hugo
             nixfmt
           ];
+          shellHook = ''
+            mkdir -p themes
+            ln -sn "${hugo-hermit-v2}" "themes/hermit-V2"
+          '';
         };
       }
     );

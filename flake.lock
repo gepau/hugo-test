@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "hugo-hermit-v2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1772295320,
+        "narHash": "sha256-EDF4hJn46MMggrj0ZLsD4Zt1nX4wzkHLHbMPqseF104=",
+        "owner": "1bl4z3r",
+        "repo": "hermit-V2",
+        "rev": "cff7a3f7ef3bc35a05987e10d65a37ce22e3c376",
+        "type": "github"
+      },
+      "original": {
+        "owner": "1bl4z3r",
+        "repo": "hermit-V2",
+        "rev": "cff7a3f7ef3bc35a05987e10d65a37ce22e3c376",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1773814637,
@@ -18,6 +35,7 @@
     },
     "root": {
       "inputs": {
+        "hugo-hermit-v2": "hugo-hermit-v2",
         "nixpkgs": "nixpkgs",
         "utils": "utils"
       }
