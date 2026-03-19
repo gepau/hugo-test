@@ -1,3 +1,36 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://hugo-test.com/'
+title = 'Förderverein Kita Buddelflink'
+theme = "hermit-V2"
+
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = true
+
+languageCode = 'de-DE'
+
+[params]
+  description = "CHANGE ME SITE DESCRIPTION"
+  footerHideThemeName = false
+  homeSubtitlePrinter = false
+  readTime         = true
+  scrollToTop      = true
+
+  [params.dateform]
+    CopyrightDate = "2006"
+    LongDate = "2. Jan, 2006"
+    ShortDate = "2. Jan"
+    NumDateShort = "02.01.2006"
+    NumDateLong = "02.01.2006 15:04"
+
+[menu]
+  [[menu.main]]
+    name = "Aktuelles"
+    url = "posts/"
+    weight = 10
+  [[menu.main]]
+    name = "Über uns"
+    url = "about/"
+    weight = 20
+  [[menu.main]]
+    name = "Kontakt"
+    url = "contact/"
+    weight = 30
