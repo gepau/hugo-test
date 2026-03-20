@@ -24,7 +24,7 @@ languageCode = 'de-DE'
 [menu]
   [[menu.main]]
     name = "Aktuelles"
-    url = "posts/"
+    url = "aktuelles/"
     weight = 10
   [[menu.main]]
     name = "Über uns"
