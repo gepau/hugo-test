@@ -14,6 +14,8 @@ languageCode = 'de-DE'
   readTime         = true
   scrollToTop      = true
   bgImg = "../images/background.jpg"
+  footerCopyright = ' <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener">MIT License</a>'
+
 
   [params.dateform]
     CopyrightDate = "2006"
