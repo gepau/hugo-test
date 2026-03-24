@@ -13,6 +13,7 @@ languageCode = 'de-DE'
   homeSubtitlePrinter = false
   readTime         = true
   scrollToTop      = true
+  bgImg = "../images/background.jpg"
 
   [params.dateform]
     CopyrightDate = "2006"
