@@ -4,4 +4,7 @@ draft = true
 title = 'Kontakt'
 +++
 
-Blah
+Förderverein "KITA Buddelflink Erdmannsdorf" e.V.  
+Steingasse 5  
+09573 Augustusburg  
+info@fv-buddelflink.de  
